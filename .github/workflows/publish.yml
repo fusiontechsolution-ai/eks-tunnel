@@ -21,10 +21,19 @@ jobs:
           node-version: '22.x'
           registry-url: 'https://registry.npmjs.org'
 
+      - name: Upgrade npm to latest (>= 11.5.1 required for trusted publishing)
+        run: npm install -g npm@latest
+
+      - name: Verify versions
+        run: |
+          echo "Node: $(node --version)"
+          echo "npm: $(npm --version)"
+
       - run: npm ci
 
       - run: npm run build
 
       - run: npm test
 
-      - run: npm publish --access public --provenance
+      - name: Publish to npm
+        run: npm publish --access public --provenance
