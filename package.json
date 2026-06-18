@@ -1,0 +1,44 @@
+{
+  "name": "@fusiontechsolution.ai/eks-tunnel",
+  "version": "0.1.0",
+  "description": "CLI tool to establish SSM port-forwarding tunnels to private EKS clusters through bastion hosts",
+  "main": "./dist/cli.js",
+  "bin": {
+    "eks-tunnel": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:property": "vitest run tests/property"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "eks",
+    "aws",
+    "ssm",
+    "tunnel",
+    "kubernetes",
+    "kubectl",
+    "port-forwarding"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "inquirer": "^9.3.7"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.10",
+    "@types/node": "^20.14.0",
+    "fast-check": "^3.19.0",
+    "typescript": "^5.5.0",
+    "vitest": "^1.6.0"
+  }
+}
