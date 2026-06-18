@@ -1,6 +1,6 @@
 {
   "name": "@fusiontechsolution.ai/eks-tunnel",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "CLI tool to establish SSM port-forwarding tunnels to private EKS clusters through bastion hosts",
   "main": "./dist/cli.js",
   "bin": {
@@ -30,6 +30,10 @@
     "port-forwarding"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fusiontechsolution-ai/eks-tunnel.git"
+  },
   "dependencies": {
     "commander": "^12.1.0",
     "inquirer": "^9.3.7"
