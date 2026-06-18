@@ -53,7 +53,7 @@ const program = new Command();
 program
   .name('eks-tunnel')
   .description('CLI tool to establish SSM port-forwarding tunnels to private EKS clusters')
-  .version('0.1.0');
+  .version('0.1.1');
 
 program
   .command('connect [cluster-name]')

@@ -3,7 +3,7 @@
 A globally-installable CLI tool that establishes SSM port-forwarding tunnels to private EKS clusters through bastion hosts. One command to connect, kubectl is ready.
 
 ```bash
-npm install -g eks-tunnel
+npm install -g @fusiontechsolution.ai/eks-tunnel
 eks-tunnel connect my-cluster
 ```
 
@@ -29,7 +29,7 @@ eks-tunnel connect my-cluster
 
 ```bash
 # Install globally
-npm install -g eks-tunnel
+npm install -g @fusiontechsolution.ai/eks-tunnel
 
 # Create a starter config
 eks-tunnel init
@@ -210,3 +210,9 @@ tests/
 ## License
 
 MIT
+
+## Changelog
+
+See [CHANGELOG.md](./CHANGELOG.md) for a full list of changes per version.
+
+Release notes for each version are available in [docs/releases/](./docs/releases/).
