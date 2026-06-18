@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.3] - 2026-06-18
+
+### Fixed
+
+- Publish workflow now upgrades npm CLI to latest (>= 11.5.1 required for Trusted Publishing OIDC)
+- Added version verification step in CI to confirm Node/npm versions before publish
+- Resolved 4 dependency vulnerabilities (esbuild/vite) by upgrading vitest
+
+### Changed
+
+- Upgraded vitest from ^1.6.0 to latest
+- Re-added `--provenance` flag to publish command for explicit OIDC detection
+
 ## [0.1.2] - 2026-06-18
 
 ### Fixed
@@ -64,6 +77,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CI workflow (Node 18/20/22 matrix)
 - Publish workflow (on GitHub Release → npm)
 
+[0.1.3]: https://github.com/fusiontechsolution-ai/eks-tunnel/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/fusiontechsolution-ai/eks-tunnel/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/fusiontechsolution-ai/eks-tunnel/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/fusiontechsolution-ai/eks-tunnel/releases/tag/v0.1.0
